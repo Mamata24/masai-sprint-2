@@ -1,17 +1,23 @@
 var studentDetails = [];
 var nameUI;
 var ageUI;
+var gradeUI
+var sectionUI
 var scienceUI;
 var englishUI;
 var mathematicsUI;
+var computerApplnUI;
 var addStudentUI;
 
 function EnterData() {
     nameUI = document.querySelector("#name");
     ageUI = document.querySelector("#age");
+    gradeUI = document.querySelector("#grade");
+    sectionUI = document.querySelector("#section");
     scienceUI = document.querySelector("#s");
     englishUI = document.querySelector("#e");
     mathematicsUI = document.querySelector("#m");
+    computerApplnUI = document.querySelector("#ca");
     addStudentUI = document.querySelector("#submitdata");
     tableUI = document.querySelector("#showData");
     showDataUI = document.querySelector("#showDatatable");
@@ -27,13 +33,17 @@ function createStudent(e) {
     var obj = {
         name: nameUI.value,
         age: ageUI.value,
+        grade: gradeUI.value,
+        section: sectionUI.value,
         science: scienceUI.value | "0",
         english: englishUI.value | "0",
         mathematics: mathematicsUI.value | "0",
+        computerApplnUI: computerApplnUI.value | "0",
         sum:
             (parseInt(scienceUI.value) +
                 parseInt(englishUI.value) +
-                parseInt(mathematicsUI.value)
+                parseInt(mathematicsUI.value) +
+                parseInt(computerApplnUI.value)
 
             ) |
             "0"
