@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Data</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="card">
+        <div class="page-heading">
+            <h4>Add Student</h4>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="label-area">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter Name" required />
+                </div>
+                <div class="label-area">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" placeholder="Enter Age" required />
+                </div>
+                <div class="label-area">
+                    <label for="name">Marks</label>
+                    <input type="text" placeholder="Science" id="s" required />
+                    <input type="text" placeholder="English" id="e" required />
+                    <input type="text" placeholder="Mathematics" id="m" required />
+                </div>
+                <div class="label-area">
+                    <input type="submit" value="Submit" id="submitdata" class="btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <section class="data-form card">
+        <table id="showData">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Science</th>
+                    <th>English</th>
+                    <th>Mathematics</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="showDatatable"></tbody>
+        </table>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

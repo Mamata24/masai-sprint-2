@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=709&q=80');
+    padding: 20px;
+  }
+  .card {
+    border: 2px solid #212f3c;
+    border-radius: 10px;
+    background: #fff;
+    padding: 16px;
+  }
+  .card .page-heading h4 {
+    font-size: 22.5px;
+    color: #212f3c;
+    text-align: center;
+  }
+  .label-area {
+    padding: 16px 0;
+  }
+  .label-area input {
+    padding: 10px;
+    margin: 0px 8px;
+  }
+  #age{
+    margin-left: 22px;
+  }
+  .right {
+    background: black !important;
+    color: #fff !important;
+  }
+  .btn-primary {
+    border: 2px solid #212f3c;
+    border-radius: 5px;
+    color: #212f3c;
+    background-color:#5d6d7e ;
+    background: transparent;
+    padding: 16px 29px;
+  }
+  
+  #showData {
+    width: 100%;
+  }
+  #showData th {
+    background: #5d6d7e;
+    color: #fff;
+    padding: 16px;
+  }
+  
+  #showData .tdata:nth-child(even) {
+    background: #212f3d;
+    color: #fff;
+    padding: 8px;
+    font-weight: bold;
+  }
+  #showData .tdata:nth-child(odd) {
+    background: #2e4053;
+    padding: 8px;
+    color: #fff;
+    font-weight: bold;
+  }
